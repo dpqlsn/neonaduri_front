@@ -37,3 +37,22 @@ document.addEventListener('DOMContentLoaded', () => {
         errorModal.style.display = 'none';
     });
 });
+
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('pw');
+const loginButton = document.getElementById('open');
+
+function updateButtonState() {
+    if (emailInput.value.trim() !== '' && passwordInput.value.trim() !== '') {
+        loginButton.classList.add('active');
+        loginButton.disabled = false;
+    } else {
+        loginButton.classList.remove('active');
+        loginButton.disabled = true;
+    }
+}
+
+emailInput.addEventListener('input', updateButtonState);
+passwordInput.addEventListener('input', updateButtonState);
+
+updateButtonState();

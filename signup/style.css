@@ -30,7 +30,6 @@ body {
     font-weight: bold;
     font-size: 24px;
 }
-
 span {
     color: #9747FF;
 }
@@ -44,7 +43,7 @@ span {
 .space {
     width: 44%;
     height: 74%;
-    margin-top: 4%;
+    margin-top: 3%;
     overflow: hidden;
 }
 .detail {
@@ -67,8 +66,16 @@ input::placeholder {
     text-align: center;
     font-family: "Noto Sans KR", sans-serif;
     font-size: 14px;
-    padding-left: 22%;
+    padding-left: 25%;
     padding-top: 2%;
+    color: #CCCCCC;
+}
+.smalltitle{
+    display: flex;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    padding-left: 25%;
     color: #CCCCCC;
 }
 button {

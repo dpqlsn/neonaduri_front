@@ -59,3 +59,7 @@ signupForm.addEventListener('submit', handleFormSubmit);
 closeError.addEventListener('click', () => {
     hideModal(errorModal);
 });
+
+document.querySelector('[value="로그인하기"]').addEventListener('click', function() {
+    window.location.href = 'login/index.html';
+});

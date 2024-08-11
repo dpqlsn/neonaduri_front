@@ -34,7 +34,7 @@ body {
 .space {
     width: 44%;
     height: 74%;
-    margin-top: 4%;
+    margin-top: 12%;
     overflow: hidden;
 }
 .detail {
@@ -56,19 +56,18 @@ input::placeholder {
     display: flex;
     text-align: center;
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     padding-left: 22%;
     padding-top: 2%;
     color: #CCCCCC;
 }
-button {
+button{
     display: flex;
     text-align: center;
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: #9747FF;
-    background-color: #FFFFFF;
-    border: #FFFFFF;
+    border: 0px solid #FFFFFF;
 }
 input[type="text"],
 input[type="password"] {
@@ -110,8 +109,8 @@ button[type="submit"]:hover {
     display: flex;
     font-family: "Noto Sans KR", sans-serif;
     color: #9747FF;
-    font-size: 16px;
-    border: 1px solid #fff;
+    font-size: 14px;
+    border: 0px solid #fff;
     background-color: #fff;
     cursor: pointer;
 }
@@ -134,10 +133,10 @@ input:focus {
     backdrop-filter: blur(3px);
     display: none;
 }
-.modal {
+.modal{
     background: white;
     border-radius: 24px;
-    width: 25%;
+    width: 30%;
     height: 35%;
 }
 .modal-title {
@@ -152,17 +151,16 @@ input:focus {
     justify-content: center;
     margin-top: 20%;
 }
-[id="closeError"]{
-    display: flex;
-    justify-content: center;
-    padding: 3%;
-    width: 60%;
-    height: 20%;
-    background-color: #9747FF;
-    color: white;
-    border-radius: 12px;
+#open {
+    background-color: #CCCCCC;
+    cursor: not-allowed;
 }
-[id="closeSuccess"]{
+#open.active {
+    background-color: #9747FF;
+    cursor: pointer;
+}
+[id="closeError"],
+[id="closeSuccess"] {
     display: flex;
     justify-content: center;
     padding: 3%;

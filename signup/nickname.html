@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./nick.css" />
+    <script src="./nick.js" defer></script>
+    <title>아름 압력칸</title>
+</head>
+<body>
+    <div class="box">
+        <div class="void">
+            <div class="nametext">
+                <p>이름을 입력해주세요</p>
+            </div>
+            <div class="smalltitle">표시되는 이름은 바꿀 수 있어요!</div>
+            <div class="arrow">
+                <div class="nickname">
+                    <label for="nickname"></label>
+                    <input type="text" id="nickname" name="nickname" placeholder="김밤돌" />
+                </div>
+            </div>
+            <button id="close">확인</button>
+        </div>
+    </div>
+
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-spinner"></div>
+        <p>로딩 중...</p>
+    </div>
+</body>
+</html>
