@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>로그인 페이지</title>
+</head>
+<body>
+    <div class="box">
+        <div class="space">
+            <div class="log">로그인</div>
+            <form id="loginForm" action="/login" method="post">
+                <div class="detail">
+                    <label for="email"></label>
+                    <input type="text" id="email" name="email" placeholder="이메일&ensp;" required />
+                </div>
+                <div class="detail">
+                    <label for="pw"></label>
+                    <input type="password" id="pw" name="password" placeholder="비밀번호" required />
+                </div>
+                <button type="submit" id="open">로그인</button>
+            </form>
+            <div class="modal-wrapper" id="successModal">
+                <div class="modal">
+                    <div class="modal-title">로그인되었습니다!</div>
+                    <div class="close-wrapper">
+                        <button id="closeSuccess">확인</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-wrapper" id="errorModal">
+                <div class="modal">
+                    <div class="modal-title">회원정보가 일치하지 않습니다</div>
+                    <div class="close-wrapper">
+                        <button id="closeError">확인</button>
+                    </div>
+                </div>
+            </div>
+            <div class="small">처음 이용하시나요?&ensp;<input type="button" value="회원가입하기" onclick="make()" /></div>
+        </div>
+    </div>
+</body>
+</html>
