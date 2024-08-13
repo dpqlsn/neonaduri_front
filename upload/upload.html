@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
-    <title>로그인 페이지</title>
+    <title>사진 업로드</title>
 </head>
 <body>
     <div class="box">
-
+        <div class="space">
+            <div class="maintitle">사진 업로드</div>
+            <div class="upload-space" id="upload-space">
+                <form id="file-uploader-form">
+                    <div class="upload-text">업로드할 파일 놓기</div>
+                    <div class="mini">또는</div>
+                    <div id="upload-button" class="upload-button">사진에서 선택</div>
+                    <input id="file-input" class="hidden" type="file" multiple accept="image/*">
+                    <div id="image-preview" class="image-preview"></div>
+                </form>
+            </div>
+            <div class="nextbtn">다음</div>
+        </div>
     </div>
 </body>
 </html>
