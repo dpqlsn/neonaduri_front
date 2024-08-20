@@ -21,3 +21,85 @@ body {
     box-shadow: 2px 2px 10px 3px #00000025; 
     background-color: #FFFFFF;
 }
+.space {
+    width: 74%;
+    height: 88%;
+    margin-top: 8%;
+    overflow: hidden;
+}
+[id=maintitle] {
+    display: flex;
+    font-weight: medium;
+    font-size: 28px;
+    background-color: transparent;
+    color: #000;
+    border: transparent;
+    cursor: pointer;
+    font-family: "Noto Sans KR", sans-serif;
+}
+input:focus::placeholder {
+    color: transparent;
+    font-family: "Noto Sans KR", sans-serif;
+}
+input:focus {
+    outline: none;
+    font-family: "Noto Sans KR", sans-serif;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    box-shadow: 0 0 0px 1000px #fff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.mini {
+    display: flex;
+    font-size: 20px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 0.5%;
+    font-family: "Noto Sans KR", sans-serif;
+}
+textarea {
+    display: flex;
+    justify-content: top;
+    width: 95%;
+    height: 30%;
+    padding: 2%;
+    margin-top: 1%;
+    margin: 0.5%;
+    font-size: 18px;
+    border-radius: 8px;
+    resize: none;
+    outline: none;
+    border: 2px solid #999;
+    background-color: #e6e6e6;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.tag-container {
+    position: relative;
+    width: 95%;
+    margin: 1%;
+}
+#tag {
+    width: 87%;
+    padding: 2%;
+    padding-right: 10%; 
+    font-size: 18px;
+    height: 8%;
+    border-radius: 8px;
+    border: 2px solid #999;
+    background-color: #e6e6e6;
+    font-family: "Noto Sans KR", sans-serif;
+}
+#plus {
+    position: absolute;
+    padding-right: 20%;
+    font-size: 20px;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Noto Sans KR", sans-serif;
+}

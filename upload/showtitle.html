@@ -2,13 +2,25 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./show.css" />
     <script src="./script.js" defer></script>
     <title>이미지 소개</title>
 </head>
 <body>
     <div class="box">
-
+        <div class="space">
+            <label for="maintitle"></label>
+            <input type="text" id="maintitle" name="maintitle" placeholder="제목 입력" />
+            <div class="mini">내용</div>
+            <label for="detail"></label>
+            <textarea placeholder="간단한 설명을 적어주세요&#10;"></textarea>
+            <div class="mini">태그</div>
+            <div class="tag_container">
+                <label for="tag"></label>
+                <input type="text" id="tag" name="tag" placeholder="태그를 입력하세요" />
+                <button id="plus">+</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
