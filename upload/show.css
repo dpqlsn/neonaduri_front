@@ -10,7 +10,7 @@ body {
     height: 100vh;
     background-color: #DEDEDE;
 }
-.box {
+.box { 
     display: flex;
     justify-content: center;
     align-items: center;
