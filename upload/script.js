@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (filesArray.length > 0) {
             uploadButton.style.display = 'none';
         }
-    }
+    } 
 });
 
 document.getElementById('plus').addEventListener('click', function() {
